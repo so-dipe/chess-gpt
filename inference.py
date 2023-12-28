@@ -1,5 +1,12 @@
 from transformers import pipeline, AutoTokenizer
 from optimum.intel import OVModelForCausalLM
+from google_storage import download_blobs
+
+download_blobs(
+    "sodipe-models",
+    prefix='gpt2/',
+    local_directory="assets/gpt2",
+)
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 tokenizer.pad_token = "<PAD>"
