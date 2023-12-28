@@ -12,7 +12,7 @@ def generate_next_move(previous_moves):
     if len(previous_moves) > 0:
         num_moves = len(previous_moves.split(' '))
         num_tokens = len(tokenizer(previous_moves)['input_ids'])
-        moves = generator(previous_moves, max_length=(num_tokens + 3))
+        moves = generator(previous_moves, max_length=(num_tokens + 7))
         moves = moves[0]['generated_text'].split(' ')
         next_move = moves[num_moves]
         return next_move
