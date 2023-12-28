@@ -164,3 +164,5 @@ google-cloud-cli-458.0.1-linux-x86_64.tar.gz
 google-cloud-sdk
 
 assets/gpt2
+
+service_account_key.json
