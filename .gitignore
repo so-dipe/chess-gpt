@@ -166,3 +166,6 @@ google-cloud-sdk
 assets/gpt2
 
 service_account_key.json
+.github/workflows/docker-build.yml
+
+.streamlit/secrets.toml

@@ -1,7 +1,10 @@
 from google.cloud import storage
+from st_secrets import load_secrets
+
+load_secrets()
 
 def download_blobs(bucket_name, prefix='', local_directory=''):
-    client = storage.Client.from_service_account_json('service-account-key.json')
+    client = storage.Client.from_service_account_json('service_account_key.json')
     bucket = client.get_bucket(bucket_name)
 
     blobs = bucket.list_blobs(prefix=prefix)

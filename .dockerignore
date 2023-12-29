@@ -166,3 +166,5 @@ google-cloud-sdk
 assets/
 
 service_account_key.json
+
+.streamlit/secrets.toml
