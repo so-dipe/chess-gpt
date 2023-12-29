@@ -3,7 +3,7 @@ from inference import generate_next_move
 
 st.title("Chess Move Generator")
 
-previous_moves = st.text_input("Enter previous chess moves (e.g., d4 d5 ...):")
+previous_moves = st.text_area("Enter previous chess moves (e.g., d4 d5 ...):")
 
 if st.button("Generate Next Move"):
     if previous_moves:
